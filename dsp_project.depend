@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1543108161 source:e:\prg\classes\dspfromgroundup\cprojects\dsp_project\src\dsptools.cpp
+	"DSPTools.h"
+	<math.h>
+
+1543108068 e:\prg\classes\dspfromgroundup\cprojects\dsp_project\include\dsptools.h
+
