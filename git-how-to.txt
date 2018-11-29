@@ -1,0 +1,64 @@
+//*******************
+How to set up set up global settings:
+
+git config --global user.name bjcervantes
+git config --global user.mail bjcervantes@navy.mil
+
+// *****************
+Create a repository repository:
+git init
+
+// To stage a modification:
+git add <filename>
+git add . (for all changed files in current folder)
+
+// To commit changes
+git commit -m "modification message"
+
+// To see changes/commits
+git log
+git log --oneline
+
+// Getting back in time. Getting to previous checkouts:
+// Safest method
+git chckeout "<log-number from git log command>"
+git checkout master (to get to latest changes)
+
+// undoing changes:
+// Safer method. This change doesn't erase that specific log but\
+// puts the commit at the front of the logs (will be the latest log)
+get revert "<log-number from git log command>"
+
+// Undoing changes:
+// Can't undo changes.
+get reset "<log-number from git log command>"        (changes remain in the editor in case you want to change your mind)
+get reset "<log-number from git log command>" --hard ( Commits after that log will be lost forever)
+
+// Branching
+git branch -a (list all branches)
+git branch <name of new branch> (create branch)
+git checkout -b <name of the new branch> (creates and swithes to new branch)
+git branch -D <name of new branch> (for branches that are not merged)
+git branch -d <name of new branch> (for branches were merged)
+
+// Merging
+git checkout <branch that you want to merge in>
+git merge <mergin branch>
+
+// working with github
+// Fist scenario: you have already a local repository
+git push https://github.com/bjcervantes/git-one.git master (save local repository on the remote master branch)
+or:
+git remote add origin https://github.com/bjcervantes/git-one.git (alias for remote url)
+git push origin master
+
+// Second scenario: clone remote repository
+cd to target folder.
+git clone https://github.com/bjcervantes/crap-portfolio.git (this will download repos folder on targe folder)
+git remote -v (see what aliases we have)
+
+// Get latest code from remote
+git pull origin master
+
+// pushing a new branch changes to remote branch
+git push origin <remote branch> (other than remote)
