@@ -16,7 +16,7 @@ int main()
     DSPTools m_DSP;
     MEAN = m_DSP.calc_signal_mean(InputSignal_f32_1kHz_15kHz, SIG_LENGTH);
     VARIANCE = m_DSP.calc_signal_variance(InputSignal_f32_1kHz_15kHz, MEAN, SIG_LENGTH);
-   STD = m_DSP.calc_signal_std(VARIANCE);
+    STD = m_DSP.calc_signal_std(VARIANCE);
     printf("\n\n Mean = %lf\n variance=%lf\n Standard-Deviation=%lf\n\n", MEAN, VARIANCE, STD);
     return 0;
 }
