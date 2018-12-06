@@ -33,3 +33,8 @@ double DSPTools::calc_signal_variance(double* sig_src_arr, double sig_mean, int 
     variance /= (sig_length - 1);
     return variance;
 }
+
+double DSPTools::calc_signal_std(double signal_variance)
+{
+    return sqrt(signal_variance);
+}

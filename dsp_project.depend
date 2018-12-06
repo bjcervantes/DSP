@@ -1,7 +1,15 @@
 # depslib dependency file v1.0
-1543108161 source:e:\prg\classes\dspfromgroundup\cprojects\dsp_project\src\dsptools.cpp
+1543679971 source:e:\prg\classes\dspfromgroundup\cprojects\dsp_project\src\dsptools.cpp
 	"DSPTools.h"
 	<math.h>
 
-1543108068 e:\prg\classes\dspfromgroundup\cprojects\dsp_project\include\dsptools.h
+1543679839 e:\prg\classes\dspfromgroundup\cprojects\dsp_project\include\dsptools.h
+
+1543679951 source:e:\prg\classes\dspfromgroundup\cprojects\dsp_project\main.cpp
+	<iostream>
+	"waveforms.h"
+	"DSPTools.h"
+	"stdio.h"
+
+1543107592 e:\prg\classes\dspfromgroundup\cprojects\dsp_project\include\waveforms.h
 
