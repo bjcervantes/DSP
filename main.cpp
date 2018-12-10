@@ -23,7 +23,7 @@ int main()
     */
 
     FILE *input_sig_fptr = nullptr, *imp_rsp_fptr = nullptr;
-    input_sig_fptr = fopen("input_sig.dat", "w");
+    input_sig_fptr = fopen("input_signal.dat", "w");
     imp_rsp_fptr = fopen("impulse_response.dat", "w");
 
     for (int i = 0; i<SIG_LENGTH; i++)

@@ -2,4 +2,6 @@
 bin/
 #ignore obj folder
 obj/
+#ignore *.dat files
+*.dat
 
