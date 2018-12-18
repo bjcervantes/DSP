@@ -42,7 +42,6 @@ double DSPTools::calc_signal_std(double signal_variance)
 
 void DSPTools::convolution(double* sig_src_arr, double* sig_dest_arr, double* imp_response_arr, int sig_src_length, int imp_response_length)
 {
-    //std::memset(sig_dest_arr, 0, sig_src_length + imp_response_length);
     for(int i=0; i<sig_src_length + imp_response_length; i++)
     {
         sig_dest_arr[i] = 0.0;
@@ -52,7 +51,6 @@ void DSPTools::convolution(double* sig_src_arr, double* sig_dest_arr, double* im
         for (int j= 0; j<imp_response_length; j++)
         {
             sig_dest_arr[i+j] += sig_src_arr[i]*imp_response_arr[j];
-            //sig_dest_arr[i+j]  = sig_dest_arr[i+j] + sig_src_arr[i]*imp_response_arr[j];
         }
     }
 }
