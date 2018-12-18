@@ -19,9 +19,18 @@
 
 1544159325 c:\users\papi\documents\prg\dsp_class\cprojects\dsp\include\dsptools.h
 
-1544484500 source:c:\prg\classes\dsp_from_the_ground_up\dsp\src\dsptools.cpp
+1545155540 source:c:\prg\classes\dsp_from_the_ground_up\dsp\src\dsptools.cpp
 	"DSPTools.h"
 	<math.h>
+	<cstring>
 
-1544484500 c:\prg\classes\dsp_from_the_ground_up\dsp\include\dsptools.h
+1545154621 c:\prg\classes\dsp_from_the_ground_up\dsp\include\dsptools.h
+
+1545155975 source:c:\prg\classes\dsp_from_the_ground_up\dsp\main.cpp
+	<iostream>
+	"waveforms.h"
+	"DSPTools.h"
+	"stdio.h"
+
+1545155302 c:\prg\classes\dsp_from_the_ground_up\dsp\include\waveforms.h
 

@@ -5,9 +5,6 @@
 
 using namespace std;
 
-const int IMP_RES_LENGTH = 29;
-const int SIG_LENGTH = 320;
-
 double MEAN = 0.0;
 double VARIANCE = 0.0;
 double STD;
@@ -22,9 +19,14 @@ int main()
     printf("\n\n Mean = %lf\n variance=%lf\n Standard-Deviation=%lf\n\n", MEAN, VARIANCE, STD);
     */
 
-    FILE *input_sig_fptr = nullptr, *imp_rsp_fptr = nullptr;
+    FILE *input_sig_fptr = nullptr, *imp_rsp_fptr = nullptr, *output_sig_fptr = nullptr;
+    double Output_signal[SIG_LENGTH + IMP_RES_LENGTH];
+
+    m_DSP.convolution(InputSignal_f32_1kHz_15kHz, Output_signal, Impulse_response, SIG_LENGTH, IMP_RES_LENGTH);
+
     input_sig_fptr = fopen("input_signal.dat", "w");
     imp_rsp_fptr = fopen("impulse_response.dat", "w");
+    output_sig_fptr = fopen("output_signal.dat", "w");
 
     for (int i = 0; i<SIG_LENGTH; i++)
     {
@@ -38,5 +40,10 @@ int main()
     }
     fclose(imp_rsp_fptr);
 
+    for (int i = 0; i<SIG_LENGTH + IMP_RES_LENGTH; i++)
+    {
+        fprintf(output_sig_fptr, "\n%f", Output_signal[i]);
+    }
+    fclose(output_sig_fptr);
     return 0;
 }
